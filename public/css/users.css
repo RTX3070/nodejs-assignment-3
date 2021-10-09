@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rebeccapurple;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+header {
+    background-color: #fafafa;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: 100%;
+}
+
+header nav ul {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+section {
+    align-items: flex-start;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    margin: auto;
+    max-width: 95%;
+    padding: 50px 0 50px 0;
+    width: 1200px;
+}
+
+section .card {
+    background-color: rgb(250,250,250);
+    background-image: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgba(226,226,226,1) 100%); 
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #000000;
+    flex: 0 0 35%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+section .card:nth-of-type(odd) {
+    margin-right: 15px;
+}
+
+section .card:nth-of-type(even) {
+    margin-left: 15px;
+}
+
+section .card .card-title .avatar {
+    border-radius: 50%;
+}
+
+section .card .card-title span {
+    color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    top: -25px;
+}
+
+section .card .card-title .f-name {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+section .card .card-info p {
+    border-top: 1px solid rgba(78, 78, 78, 0.199);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+}
